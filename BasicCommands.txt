@@ -1,0 +1,28 @@
+    BASIC SQL COMMANDS
+    --------------------
+
+    - SELECT: 
+        This is a command that allows you to get data. It retrieves 1 or more rows, from 1 or more tables
+        Example: SELECT first_name, last_name FROM contacts;
+
+    - INSERT
+        Adds 1 or more rows into a table. INSERT only works against a single table, unlike SELECT which can works against
+        multiple tables.
+        Example: INSERT INTO contacts (first_name, last_name)
+                    VALUES ('John', 'doe');
+        IMPORTANT: 
+            - 'INSERT INTO' is the full insert command
+
+    - UPDATE
+        Modifies 1 or more rows in a table
+        Example: UPDATE contacts SET last_name = 'Ahern' WHERE id = 1; 
+        IMPORTANT: 
+            - The WHERE clause tells the UPDATE statement what is the retrisction on this update. if we dont add this, it woild 
+              change the last name of all contacts.
+    
+    - DELETE
+        Removes 1 or more rows from a table
+        Example: DELETE FROM contacts WHERE id = 2;
+        IMPORTANT: 
+            - If we dont add the WHERE clause here, it would delete ALL! rows in our table D:
+            - 'DELETE FROM' is the full delete command, 
